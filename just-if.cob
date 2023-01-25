@@ -1,0 +1,19 @@
+      *> programa de prueba para practicar los IF
+
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. JUST-IF.
+
+       DATA DIVISION.
+tonto  WORKING-STORAGE SECTION.
+el     01 RESULT PIC 999.
+
+que    PROCEDURE DIVISION.
+lo        MULTIPLY 6 BY 7 GIVING RESULT.
+lea       IF RESULT IS LESS THAN 100 THEN
+                 DISPLAY "LA RESPUESTA PARECE CORRECTA: " RESULT
+           END-IF
+           IF RESULT IS GREATER THAN OR EQUAL TO 100 THEN
+                 DISPLAY "ALGO FALLA EN EL UNIVERSO: " RESULT
+           END-IF
+       GOBACK.
+           END PROGRAM JUST-IF.

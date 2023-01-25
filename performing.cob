@@ -1,0 +1,22 @@
+      *> un programa que usa perform
+      
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. PERFORMING.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01 COUNTER PIC 9 VALUE 1.
+
+       PROCEDURE DIVISION.
+           DISPLAY COUNTER.
+           PERFORM INCREMENT-COUNTER.
+           DISPLAY COUNTER.
+           PERFORM INCREMENT-COUNTER.
+           DISPLAY COUNTER.
+           PERFORM INCREMENT-COUNTER.
+           DISPLAY COUNTER.
+       GOBACK.
+       INCREMENT-COUNTER.
+           ADD 1 TO COUNTER
+           .
+           END PROGRAM PERFORMING.

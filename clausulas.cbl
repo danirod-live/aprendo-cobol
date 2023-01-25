@@ -1,0 +1,19 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. CLAUSULAS.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01 EDAD PIC 999.
+           88 MENOR VALUES 0 THROUGH 17.
+           88 MAYOR VALUES 18 THROUGH 999.
+
+       PROCEDURE DIVISION.
+      * ACCEPT EDAD.
+      *     IF MENOR THEN
+      *         DISPLAY "ES MENOR"
+      *     ELSE
+      *         DISPLAY "ES MAYOR"
+      *     END-IF.
+           SET MAYOR TO TRUE.
+           DISPLAY EDAD.
+           END PROGRAM CLAUSULAS.

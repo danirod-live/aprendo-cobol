@@ -1,0 +1,22 @@
+      *> vamos a ver los bucles
+      
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. PERFORM-LOOP.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01 COUNTER PIC 9 VALUE 1.
+
+       PROCEDURE DIVISION.
+           DISPLAY COUNTER
+           PERFORM INCREMENT-COUNTER UNTIL COUNTER > 7
+           DISPLAY COUNTER
+
+           GOBACK.
+
+       INCREMENT-COUNTER.
+           ADD 1 TO COUNTER
+           DISPLAY COUNTER
+       .
+
+           END PROGRAM PERFORM-LOOP.
